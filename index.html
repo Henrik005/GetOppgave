@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Filest of Files</title>
+</head>
+<style>
+ div.verktøy {
+ color: white;
+  background-color: rgb(25, 176, 25);
+  padding: 10px;
+  border: solid 2px grey;
+  width: 500px;
+  text-align: center;
+  user-select: none;
+  font-size: 150%;
+ }
+ div.HTML {
+ color: white;
+  background-color: rgb(29, 68, 209);
+  padding: 10px;
+  border: solid 2px grey;
+  width: 500px;
+  text-align: center;
+  user-select: none;
+  font-size: 150%;
+ }
+ div.CSS {
+ color: white;
+  background-color: rgb(213, 41, 41);
+  padding: 10px;
+  border: solid 2px grey;
+  width: 500px;
+  text-align: center;
+  user-select: none;
+  font-size: 150%;
+ }
+ div.JavaScript {
+ color: white;
+  background-color: rgb(211, 211, 18);
+  padding: 10px;
+  border: solid 2px grey;
+  width: 500px;
+  text-align: center;
+  user-select: none;
+  font-size: 150%;
+ }
+ div.Limbs {
+ color: white;
+  background-color: rgb(20, 20, 20);
+  padding: 10px;
+  border: solid 2px grey;
+  width: 500px;
+  text-align: center;
+  user-select: none;
+  font-size: 150%;
+ }
+ div.List {
+  background-color: rgb(182, 178, 178);
+  width: 503px;
+  padding: 10px;
+  border: solid 2px rbg(182, 178, 178);
+  
+ }
+/* I'm keeping the CSS on the same file because i wanna keep everything in one spot right now :D */
+</style>
+
+<body>
+    <button>Ingen Layout</button>
+    <button>Vetikal Layout</button>
+    <button>Horsiontal Layout</button>
+    <button>Grid Layout</button>
+
+
+    <h1>Henrik's Recreation</h1>
+
+    <div onclick="LeClick1()" class="verktøy">
+        Vertkøy
+    </div>
+    <div id="List1" class="List">
+        <br/>
+        De viktigestte verktøyene vi skal bruke er disse:
+        <ul>
+       <li>
+        Koderedigeringsprogrammet
+        <a href="https://code.visualstudio.com/">Visual Studio Code</a>
+        Vi skal bruke noen <i>extensions</i>
+        <ul>
+        <li>JavaScript-booster</li>
+        <li>es6-string-html</li>
+        <li>live-server</li>
+        <li>live-share</li>
+        </ul
+        </li>
+       <li> Nettleseren 
+        <a href="https://www.google.com/intl/no/chrome/">Google Chrome</a>
+       </li>
+       </ul>
+    </div>
+
+    <div onclick="LeClick2()" class="HTML">HTML</div>
+    <div id="List2" class="List">
+        Vi bruker HTML til å definere et dokument 
+     <ul>
+     <li>Tagger for grunnleggende oppsett av en HTML-fil</li>
+     <li>Tagger for grunnleggende formatering av tekst</li>   
+     <li><tt>&lt;div&gt;</tt></li>   
+     <li><tt>&lt;input type="text"&gt;</tt></li>   
+     <li><tt>&lt;button&gt;</tt></li>   
+     <li><a href="https://www.w3schools.com/html/default.asp"> W3Schools HTML Tutorial</a></li>   
+     <li><a href="https://www.w3schools.com/tags/default.asp"> W3Schools HTML Refrence</a></li>
+
+     </ul>
+  </div>
+
+   <div onclick="LeClick3()" class="CSS">CSS</div>
+   <div id="List3" class="List">
+    Vi bruker CSS til å <i>style</i> et dokument, altså farger, fonter, utseende og lignende
+    <ul>
+    <li><tt>background-color</tt></li>
+    <li><tt>color</tt></li>
+    <li><tt>padding</tt></li>
+    <li><tt>margin</tt></li>
+    <li><tt>border</tt></li>
+    <li><tt>text-align</tt></li>
+    <li><tt>font-size</tt></li>
+    <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox</a></li>
+    <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">Grid</a></li>
+    <li><a href="https://www.w3schools.com/css/default.asp">W3Schools CSS Tutorial</a></li>
+    <li><a href="https://www.w3schools.com/cssref/default.asp">W3Schools CSS Refrence</a></li>
+    
+    </ul>
+   </div>
+
+     <div onclick="LeClick4()" class="JavaScript">JavaScript</div>
+      <div id="List4" class="List">
+        Det viktigste vi skal lære om er programmeringsspråket JavaScript.
+        Vi skal lære grunleggende programmering ved å manipulere HTML- og CSS- kode på en nettside ved hjelp av JavaScript.
+       <ul>
+       <li>Det finnes en W3Schools JavaScript Tutorial, men her anbefaler vi heller å følge kurset vårt på Moodle</li>
+       <li><a href="https://www.w3schools.com/jsref/default.asp">W3Schools JavaScript Refrence</a></li>
+
+     </ul>
+     </div>
+      
+     <div onclick="LeClick5()" class="Limbs">Hode, Kropp og Ben</div>
+      <div id="PictureGame">
+      <button">⬅</button> <img id="HeadGame" src="head1.png"/> <button>➡</button>
+    <br/>
+      
+      <button>⬅</button> <img src="body1.png"/> <button>➡</button>
+    
+      <br/>
+     <button>⬅</button> <img src="legs1.png"/> <button>➡</button>
+    
+
+ <Script>
+  BlankALL();
+ function BlankALL() {
+document.getElementById('List1').innerHTML='';
+document.getElementById('List2').innerHTML='';
+document.getElementById('List3').innerHTML='';
+document.getElementById('List4').innerHTML='';
+document.getElementById('PictureGame').innerHTML='';
+
+ }
+  function LeClick1() {
+    BlankALL();
+document.getElementById('List1').innerHTML= /*HTML*/`
+        <br/>
+        De viktigestte verktøyene vi skal bruke er disse:
+        <ul>
+       <li>
+        Koderedigeringsprogrammet
+        <a href="https://code.visualstudio.com/">Visual Studio Code</a>
+        Vi skal bruke noen <i>extensions</i>
+        <ul>
+        <li>JavaScript-booster</li>
+        <li>es6-string-html</li>
+        <li>live-server</li>
+        <li>live-share</li>
+        </ul
+        </li>
+       <li> Nettleseren 
+        <a href="https://www.google.com/intl/no/chrome/">Google Chrome</a>
+       </li>
+       </ul>`;
+  }
+  function LeClick2() {
+    BlankALL();
+document.getElementById('List2').innerHTML= /*HTML*/`
+        Vi bruker HTML til å definere et dokument 
+     <ul>
+     <li>Tagger for grunnleggende oppsett av en HTML-fil</li>
+     <li>Tagger for grunnleggende formatering av tekst</li>   
+     <li><tt>&lt;div&gt;</tt></li>   
+     <li><tt>&lt;input type="text"&gt;</tt></li>   
+     <li><tt>&lt;button&gt;</tt></li>   
+     <li><a href="https://www.w3schools.com/html/default.asp"> W3Schools HTML Tutorial</a></li>   
+     <li><a href="https://www.w3schools.com/tags/default.asp"> W3Schools HTML Refrence</a></li>
+
+     </ul>`
+ }
+
+ function LeClick3() {
+    BlankALL();
+document.getElementById('List3').innerHTML= /*HTML*/`
+Vi bruker CSS til å <i>style</i> et dokument, altså farger, fonter, utseende og lignende
+    <ul>
+    <li><tt>background-color</tt></li>
+    <li><tt>color</tt></li>
+    <li><tt>padding</tt></li>
+    <li><tt>margin</tt></li>
+    <li><tt>border</tt></li>
+    <li><tt>text-align</tt></li>
+    <li><tt>font-size</tt></li>
+    <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox</a></li>
+    <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">Grid</a></li>
+    <li><a href="https://www.w3schools.com/css/default.asp">W3Schools CSS Tutorial</a></li>
+    <li><a href="https://www.w3schools.com/cssref/default.asp">W3Schools CSS Refrence</a></li>
+    
+    </ul>`
+  }
+  function LeClick4() {
+    BlankALL();
+document.getElementById('List4').innerHTML= /*HTML*/`
+Det viktigste vi skal lære om er programmeringsspråket JavaScript.
+        Vi skal lære grunleggende programmering ved å manipulere HTML- og CSS- kode på en nettside ved hjelp av JavaScript.
+       <ul>
+       <li>Det finnes en W3Schools JavaScript Tutorial, men her anbefaler vi heller å følge kurset vårt på Moodle</li>
+       <li><a href="https://www.w3schools.com/jsref/default.asp">W3Schools JavaScript Refrence</a></li>
+
+     </ul>`
+    }
+
+    function LeClick5() {
+    BlankALL();
+document.getElementById('PictureGame').innerHTML= /*HTML*/`
+<div id="PictureGame">
+      <button>⬅</button> <img src="head1.png"/> <button>➡</button>
+    </div>
+      <div>
+      <button>⬅</button> <img src="body1.png"/> <button>➡</button>
+    </div>
+      <div>
+     <button>⬅</button> <img src="legs1.png"/> <button>➡</button>
+    </div>
+` } 
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </Script>
+
+</body>
+</html>
