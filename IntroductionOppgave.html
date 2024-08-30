@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+
+<title>This be me</title>
+</head>
+<body id="TheBod">
+    <style>
+    .BodyStyle {
+        background-color: rgb(60, 58, 58);
+    }
+    .ButtonStyle {
+        background-color: rgb(60, 58, 58);
+        color: white;
+    }
+    .TextStyle {
+        color: white;
+    }
+    .Selfie {
+        width: 400px;
+        height: 400px;
+    }
+    </style>
+    
+    <div id="IntroTxt">Hello! My name is Henrik, you may have already heard of me from one of my many specials such as "CryingMyselfToSleepAtNight" or "SorrowInducedSelfLoathing."
+     <br/>
+        Ofcourse, that is only scratching the very outer-most surface of the bottomless chasm that is my person! I have many interests, such as, but not limited to:
+        <ul>
+            <li>Gaming.</li>
+            <li> Programing.</li>
+            <li> Staring into the bottomless void, while contemplating my own mortality.</li>
+            <li> Taking well desserved naps.</li>
+            <li> Hanging out with my friends.</li>
+            <li> General online things, like watching videos or web surfing.</li>
+        </ul>
+     </div>
+      <button onclick="DarkMode()" id="Button">Enable Dark Mode</button>
+      <button onclick="LightMode()" id="ButtonL">Enable Light Mode</button>
+       <br/>
+       <img class="Selfie" src="IMG_4007.JPG"/>
+
+
+<script>
+ 
+function DarkMode() {
+    document.getElementById('TheBod').classList.add('BodyStyle');
+    document.getElementById('Button').classList.add('ButtonStyle');
+    document.getElementById('IntroTxt').classList.add('TextStyle');
+    document.getElementById('ButtonL').classList.add('ButtonStyle');
+    
+}
+
+function LightMode() {
+    document.getElementById('TheBod').classList = [];
+    document.getElementById('Button').classList = [];
+    document.getElementById('IntroTxt').classList= [];
+    document.getElementById('ButtonL').classList = [];
+}
+</script>
+
+</body>
+</html>

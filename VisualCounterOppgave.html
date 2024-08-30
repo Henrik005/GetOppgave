@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>JusticeForQuacksalot</title>
+</head>
+<body>
+    
+    <button onclick="NumberUp()">Number Up NOW >:c</button>
+    <div id="WhereNumbersGo">We're costco fans, we have to try the new double chocolate cookie</div>
+    <button onclick ='NumberDown()'> Number Down Pls c:</button>
+     
+
+
+
+
+
+<script>
+
+var NUMBER = 0
+var WhereNumbersGoDiv = document.getElementById('WhereNumbersGo')
+
+
+function NumberUp() {
+     NUMBER++;
+   WhereNumbersGoDiv.innerHTML = NUMBER;
+}
+function NumberDown() {
+    NUMBER--;
+    WhereNumbersGoDiv.innerHTML = NUMBER;
+}
+</script>
+    
+</body>
+</html>

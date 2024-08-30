@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Parameters Make My Demons Louder</title>
+</head>
+<body>
+    
+<div id="MainDiv">
+    This here be me div that i intend to change the color and crap of, yarr </div>
+</div>
+<button onclick="ColorAndStuff('Purple',50,75,'Hello world')">Lemegogus</button>
+<button onclick="ColorAndStuff('Yellow',100,200,'End My Misery')">Lonbogus</button>
+
+
+<script>
+
+function ColorAndStuff(color,width,height,text) {
+document.getElementById('MainDiv').innerHTML = /*HTML*/ `<div style= "background-color: ${color}; width: ${width}px; height: ${height}px;" >${text}</div>`
+}
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
