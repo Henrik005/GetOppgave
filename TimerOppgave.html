@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tick Tock</title>
+</head>
+<body>
+    <div id="WhereTimeGoes">Tiiimeeeer</div>
+     <button onclick="PrimaryTimer()">Start Tiiiiimeeeeer</button>
+     <br/>
+     <button onclick="LapTime()">Lap</button>
+     <br/>
+     <button onclick="StopTimer()">Stop The Hecking Timer</button>
+    <div id="LapTimeHere"></div>
+
+    
+<script>
+
+ var Time = 0
+var MainTimer = document.getElementById('WhereTimeGoes')
+var Lap = ""
+
+
+
+    function TimeCalc(){
+    Time++
+    MainTimer.innerHTML = Time;
+  
+    }
+   function PrimaryTimer(){
+    setInterval(TimeCalc, 1000)
+   }
+   function LapTime(){
+   lap = Time
+   document.getElementById('LapTimeHere').innerHTML+=/*HTML*/ `<div>Lap Time: ${lap}</div>`;
+   Time = 0;
+   }
+   function StopTimer(){
+    location.reload();
+   }
+</script>
+
+
+
+</body>
+</html>

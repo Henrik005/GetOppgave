@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I am having a heart attack</title>
+</head>
+<style>
+    .empty{
+        width: 50px;
+        height: 50px;
+        background-color: grey;
+    }
+    .selected {
+        border: solid rgb(16, 162, 211) 4px;
+        width: 500px;
+        height: 50px;
+    }
+    .colordiv {
+        width: 50px;
+        height: 20px;
+        user-select: none;
+    }
+    
+    
+</style>
+<body id="TheBod">
+    <div onclick="Selected('purple','Purple!')" class= "colordiv" id="Purple!">Purple</div>
+    <div onclick="Selected('blue','Blue!')" class="colordiv" id="Blue!">Blue</div>
+    <div onclick="Selected('red','Red!')" class="colordiv" id="Red!">Red</div>
+      <br/>
+      <div onclick="ChangeColor('Empty')" id="Empty" class="empty"></div>
+      <br/>
+      <div onclick="ChangeColor('Empty2')" id="Empty2" class="empty"></div>
+    <br/>
+    <button onclick="ChangeColor('TheBod')">ChangePageBackground</button>
+
+
+
+
+
+
+
+<script>
+    var ChosenColor
+   
+
+ function ChangeColor(id){
+  document.getElementById(id).style.backgroundColor = ChosenColor
+ }
+ function Selected(color,id){
+    RemoveBorder()
+ ChosenColor = color;
+ document.getElementById(id).classList.add('selected')
+ }
+ function RemoveBorder() {
+    document.getElementById('Purple!').classList.remove('selected')
+    document.getElementById('Blue!').classList.remove('selected')
+    document.getElementById('Red!').classList.remove('selected')
+ }
+ 
+</script>
+
+
+
+</body>
+</html>
