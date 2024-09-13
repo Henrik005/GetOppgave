@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World's Worst Lightbulb</title>
+</head>
+<style>
+    .Lightbulb{
+        display: flex;
+        border: solid gray 2px;
+        border-radius: 100px;
+        background-color: gray;
+        width: 200px;
+        height: 200px;
+    }
+    .LightBulbOn {
+        background-color: yellow;
+    }
+</style>
+<body>
+    <div id="TextBubble"></div>
+    <br/>
+<div id="TheBulb" class="Lightbulb"></div>
+<br/>
+<button onclick="OnOff()">On/Off</button>
+
+
+
+
+
+
+
+<script>
+    var OnOffV = true;
+    var Doc = document.getElementById('TheBulb')
+
+
+    function OnOff(){
+        if (OnOffV){
+         Doc.classList.add('LightBulbOn');
+         document.getElementById('TextBubble').innerHTML = 'Eureka!';
+        OnOffV = false;}
+        else {Doc.classList.remove('LightBulbOn');
+        document.getElementById('TextBubble').innerHTML = '';
+         OnOffV = true;}
+         }
+         
+    
+
+    
+    
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard!</title>
+</head>
+<style>
+.input{
+    border: solid gray 3px;
+    padding: 5px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+.keyboard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: solid gray 2px;
+    width: 400px;
+}
+</style>
+<body>
+    <div id="InputField" class="input"></div>
+    <br/>
+    <div class="keyboard">
+    <button onclick="Keyboard(this)">Q</button>
+    <button onclick="Keyboard(this)">W</button>
+    <button onclick="Keyboard(this)">E</button>
+    <button onclick="Keyboard(this)">R</button>
+    <button onclick="Keyboard(this)">T</button>
+    <button onclick="Keyboard(this)">Y</button>
+    <button onclick="Keyboard(this)">U</button>
+    <button onclick="Keyboard(this)">I</button>
+    <button onclick="Keyboard(this)">O</button>
+    <button onclick="Keyboard(this)">P</button>
+    <button onclick="Keyboard(this)">A</button>
+    <button onclick="Keyboard(this)">S</button>
+    <button onclick="Keyboard(this)">D</button>
+    <button onclick="Keyboard(this)">F</button>
+    <button onclick="Keyboard(this)">G</button>
+    <button onclick="Keyboard(this)">H</button>
+    <button onclick="Keyboard(this)">J</button>
+    <button onclick="Keyboard(this)">K</button>
+    <button onclick="Keyboard(this)">L</button>
+    <button onclick="Keyboard(this)">Z</button>
+    <button onclick="Keyboard(this)">X</button>
+    <button onclick="Keyboard(this)">C</button>
+    <button onclick="Keyboard(this)">V</button>
+    <button onclick="Keyboard(this)">B</button>
+    <button onclick="Keyboard(this)">N</button>
+    <button onclick="Keyboard(this)">M</button>
+</div>
+    
+
+
+
+<script>
+var Input = document.getElementById('InputField');
+
+function Keyboard(element){
+    Input.innerHTML += element.innerHTML
+}
+</script>
+
+</body>
+</html>
