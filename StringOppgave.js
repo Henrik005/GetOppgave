@@ -1,5 +1,6 @@
 //Model
-App = document.getElementById('App')
+
+let app = document.getElementById('App')
 
 
 
@@ -8,10 +9,12 @@ App = document.getElementById('App')
 
 //View
 
-
-
-
-
+UpdateView();
+function UptadeView(){
+   app.innerHTML = /*HTML*/ `
+   <div id="InputRslt"></div>
+   <input onchange="MakeString(this.value)"></input>`
+}
 
 
 
@@ -20,11 +23,6 @@ App = document.getElementById('App')
 
 //Controller
 
-
-
-
-
-
 function MakeString(String){
     let NewString = String[0].toUpperCase()+ String.slice(1)
-document.getElementById('App').innerHTML = `${NewString}`}
+document.getElementById('InputRslt').innerHTML = NewString}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rawr</title>
+</head>
+<body>
+
+
+<div id="PointsDis">Score:</div>
+<br/>
+<div id="Top"></div>
+<input id="InField" onchange="InputValue=this.value">
+<div id="Bottom"></div>
+<br/>
+<button onclick="Answer()">Answer</button>
+<button onclick="GenNumbers()">NewNumbers</button>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var TopNumber;
+var BottomNumber;
+var Points = 0;
+var PointsDis = document.getElementById('PointsDis');
+var InputValue;
+var RightAnswer;
+
+function GenNumbers(){
+   TopNumber = Math.floor(Math.random() * 10 + 1);
+   BottomNumber = Math.floor(Math.random() * 10 + 1);
+   document.getElementById('Top').innerHTML = TopNumber;
+    document.getElementById('Bottom').innerHTML = BottomNumber;
+    CorrectAnswer();
+   
+}
+
+function Answer(){
+    PointsDis.innerHTML = `Score: ${Points}`;
+    if(InputValue === RightAnswer){
+        Points += 1;
+    }
+    else{Points -= 1}
+    PointsDis.innerHTML = `Score: ${Points}`
+    GenNumbers();
+}
+ function CorrectAnswer(){
+
+    if(TopNumber > BottomNumber){
+        RightAnswer = '>';
+    }
+    else if(TopNumber < BottomNumber){
+    RightAnswer =  '<';
+    }
+    else{
+    RightAnswer = '=';}
+    }
+    
+
+</script>
+
+</body>
+</html>

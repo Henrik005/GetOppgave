@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="MainDiv"></div>
+    <button onclick="MakeHTML('red','And', 30, 'border')">You're</button>
+    <button onclick="MakeHTML('blue','You', 20, 'border')">A</button>
+    <button onclick="MakeHTML('purple','Smell', 10, 'border')">Fart</button>
+
+
+
+<script>
+    function MakeHTML(color, text, fontSize, border){
+    document.getElementById('MainDiv').innerHTML= `<div ${MakeStyle(color,fontSize,border)}> ${text}</div>
+    `;
+    }
+    function MakeStyle(color, fontSize, border){
+        return `style="${MakeBackgroundColor(color)} ${MakeFontSize(fontSize)} ${MakeBorder(border)}"`;
+    }
+    function MakeBackgroundColor(color){
+        return `background-color: ${color};`;
+    }
+    function MakeFontSize(fontSize){
+      return `font-size: ${fontSize}px;`;
+    }
+    function MakeBorder(border){
+        return `${border}: solid 5px gray;  `;
+    }
+
+</script>
+
+
+
+
+</body>
+</html>
